@@ -2,11 +2,14 @@
   "expo": {
     "name": "mart2",
     "slug": "mart2",
+    "entryPoint": "./index.ts",
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "homepage": "https://saralabafi.github.io/mart2",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -21,10 +24,19 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.mart2"
     },
     "web": {
+      "bundler": "metro",
       "favicon": "./assets/favicon.png"
+
+    },
+    "plugins": ["expo-secure-store"],
+    "extra": {
+      "eas": {
+        "projectId": "4bf16db9-3c65-4239-91d9-d72fa81b2579"
+      }
     }
   }
 }
